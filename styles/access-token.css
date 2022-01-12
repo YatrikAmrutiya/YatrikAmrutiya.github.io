@@ -1,0 +1,371 @@
+.access-token {
+  border-radius: 70px 70px 0px 0px;
+  margin-top: -50px;
+}
+
+.curators,
+.access-token,
+.roadmap,
+.about-page,
+.faq,
+.touch {
+  height: 100%;
+  width: auto;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.curators {
+  padding-top: 8.5em;
+}
+
+.access-token_text,
+.curators_text,
+.roadmap_text {
+  margin: 0 auto 0 auto;
+}
+
+.access-token_text h1,
+.curators_text h1,
+.roadmap_text h1 {
+  font-family: Tomica;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #00ff47;
+  text-shadow: 2px 2px 0px #000000;
+  padding-top: 3ch;
+}
+
+.access-token_text p,
+.curators_text p,
+.roadmap_text p {
+  font-family: Tomica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 147% */
+  max-width: 41.375em;
+  height: 5.625em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5e6282;
+  flex-wrap: wrap;
+}
+
+.tickets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5.25em 10.25em 0px 10.25em;
+  font-family: Tomica;
+}
+
+.tickets-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.tickets img {
+  width: 289px;
+  height: 377px;
+
+  background: url(.png);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+    drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+    drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+    drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+    drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+    drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+
+.curators-item {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4.125em;
+}
+.curators-item img {
+  max-width: 21.25em;
+  max-height: 21.4375em;
+  width: 100%;
+  height: auto;
+}
+
+.ticket_details {
+  border: 1px solid #00ff47;
+  position: relative;
+  border-top: none;
+  box-sizing: border-box;
+  border-radius: 0 0 54px 54px;
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  height: 321px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket_details p {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 124.5%;
+  /* or 16px */
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.ticket_buy {
+  width: 203px;
+  height: 49px;
+  margin-top: 25px;
+  position: relative;
+  font-family: inherit;
+  background: linear-gradient(90deg, #00ff47 1.89%, #1cd9a0 100%);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 81px 100px 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket_buy::before,
+.ticket_buy::after {
+  position: absolute;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.065em;
+  color: #df6951;
+}
+
+.ticket_buy::before {
+  content: "LIMITED to 3333";
+  top: -15px;
+  font-weight: normal;
+  /* or 14px */
+}
+
+.ticket_buy::after {
+  content: "Remaining";
+  font-weight: bolder;
+  bottom: -15px;
+}
+
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  position: relative;
+  top: -200px;
+  background-color: #00ff47;
+} */
+#access-1 {
+  background: url("../assets/access_cards/1.svg") no-repeat;
+}
+
+#access-2 {
+  background: url("../assets/access_cards/2.svg") no-repeat;
+}
+
+#access-3 {
+  background: url("../assets/access_cards/3.svg") no-repeat;
+}
+
+#access-1,
+#access-2,
+#access-3 {
+  width: 289px;
+  height: 377px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+div.transbox {
+  width: 286.11px;
+  height: 107.29px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(255, 255, 255, 50);
+  border-radius: 0px 0px 30px 0px;
+}
+
+div.transbox p {
+  /* margin: 5%; */
+  font-family: tomica;
+  font-weight: bold;
+  color: #000000;
+  width: 400px;
+  padding: 5%;
+  text-align: center;
+}
+
+.roadmap_ellipses {
+  display: flex;
+  flex-direction: row;
+  padding: 0 8.375em 0 8.375em;
+  justify-content: space-around;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step img {
+  max-width: 143px;
+}
+
+.step p {
+  font-family: Tomica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  /* or 124% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  opacity: 0.4;
+}
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 708px;
+  height: 680px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 24px;
+  margin-top: 87px;
+}
+.about-text {
+  width: 607px;
+  height: 596px;
+  font-family: Tomica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 127%;
+  /* or 23px */
+  text-align: justify;
+  letter-spacing: -0.005em;
+
+  /* TEXT CLR */
+
+  letter-spacing: -0.005em;
+
+  /* TEXT CLR */
+
+  color: #5e6282;
+
+  padding: 42px 45px 42px 56px;
+}
+
+@media all and (max-width: 900px) {
+  .tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tickets-item:not(:nth-child(1)) {
+    margin-top: 50px;
+  }
+
+  /* .ticket_buy {
+    margin-top: 60%;
+  } */
+  div.transbox {
+    border-radius: 0px 0px 30px 30px;
+  }
+  .access-token {
+    border-radius: 40px 40px 0 0;
+  }
+  .access-token_text p {
+    display: none;
+  }
+
+  .curators-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .curators-item img:not(:nth-child(1)) {
+    padding-top: 40px;
+  }
+  .curators-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .access-token_text,
+  .curators_text {
+    margin: 0 20px 0 20px;
+  }
+
+  .curators_text p {
+    flex-wrap: wrap;
+    /* padding: 0 20px 0 20px; */
+    text-align: center;
+    max-width: 100vw;
+  }
+  .curators-item {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .roadmap_ellipses {
+    flex-direction: column;
+  }
+
+  .roadmap_text {
+    text-align: center;
+  }
+
+  .about {
+    height: fit-content;
+    width: 100%;
+  }
+  .about-text {
+    height: auto;
+    padding: 4%;
+  }
+  .about-page {
+    padding: 5%;
+    border: none;
+  }
+}
