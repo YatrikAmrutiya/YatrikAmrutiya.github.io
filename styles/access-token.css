@@ -1,5 +1,7 @@
-.access-token {
+.container {
+  padding: 164px 84px;
   border-radius: 70px 70px 0px 0px;
+  background-color: #f8f8f8;
   margin-top: -50px;
 }
 
@@ -11,7 +13,7 @@
 .touch {
   height: 100%;
   width: auto;
-  background: #f8f8f8;
+  background: inherit;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +31,7 @@
 .access-token_text h1,
 .curators_text h1,
 .roadmap_text h1 {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: 900;
   font-size: 35px;
@@ -41,18 +43,21 @@
   text-shadow: 2px 2px 0px #000000;
   padding-top: 3ch;
 }
+.access-token_text h1 {
+  padding-top: 0ch;
+}
 
 .access-token_text p,
 .curators_text p,
 .roadmap_text p {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 22px;
   /* or 147% */
-  max-width: 41.375em;
-  height: 5.625em;
+  /* height: 5.625em; */
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,8 +69,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 5.25em 10.25em 0px 10.25em;
-  font-family: Tomica;
+  margin-top: 5.25em;
+  font-family: inherit;
 }
 
 .tickets-item {
@@ -79,7 +84,7 @@
   width: 289px;
   height: 377px;
 
-  background: url(.png);
+  /* background: url(.png); */
   box-sizing: border-box;
   filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
     drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
@@ -215,7 +220,7 @@ div.transbox {
 
 div.transbox p {
   /* margin: 5%; */
-  font-family: tomica;
+  font-family: inherit;
   font-weight: bold;
   color: #000000;
   width: 400px;
@@ -226,7 +231,7 @@ div.transbox p {
 .roadmap_ellipses {
   display: flex;
   flex-direction: row;
-  padding: 0 8.375em 0 8.375em;
+  /* padding: 0 8.375em 0 8.375em; */
   justify-content: space-around;
 }
 .step {
@@ -241,7 +246,7 @@ div.transbox p {
 }
 
 .step p {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -276,7 +281,7 @@ div.transbox p {
 .about-text {
   width: 607px;
   height: 596px;
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -295,8 +300,13 @@ div.transbox p {
 
   padding: 42px 45px 42px 56px;
 }
-
+.ticket_buy:hover {
+  background: #1cd9a0;
+}
 @media all and (max-width: 900px) {
+  .container {
+    padding: 164px 20px;
+  }
   .tickets {
     display: flex;
     flex-direction: column;
@@ -323,6 +333,7 @@ div.transbox p {
   .curators-item {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .curators-item img:not(:nth-child(1)) {
@@ -335,19 +346,14 @@ div.transbox p {
 
   .access-token_text,
   .curators_text {
-    margin: 0 20px 0 20px;
+    margin: 0 0px 0 0px;
   }
 
   .curators_text p {
     flex-wrap: wrap;
-    /* padding: 0 20px 0 20px; */
     text-align: center;
-    max-width: 100vw;
   }
-  .curators-item {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
+
   .roadmap_ellipses {
     flex-direction: column;
   }

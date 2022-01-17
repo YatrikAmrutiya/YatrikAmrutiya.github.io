@@ -4,9 +4,9 @@
   background: #f8f8f8;
   display: flex;
   flex-direction: row;
-  padding: 12.5em 8.375em 0 8.375em;
-  font-family: Tomica;
-  justify-content: space-between;
+  padding: 12.5em 0em 0 0em;
+  font-family: inherit;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .perk_detail_item-text h2 {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: 900;
   font-size: 19px;
@@ -78,7 +78,7 @@
   margin-bottom: 0px;
 }
 .perk_detail_item-text h4 {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -108,7 +108,7 @@
   align-items: center;
   width: 708px;
   height: 680px;
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   position: relative;
 }
@@ -155,7 +155,7 @@
   background-color: #ffffff;
   border-radius: 0 0 20px 20px;
   border: #000000 1px solid;
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: lighter;
   font-size: 20px;
@@ -206,7 +206,7 @@ textarea:focus {
 }
 .touch-form input,
 textarea {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -223,12 +223,12 @@ textarea {
   border-radius: 100px;
   padding: 15px 33px;
   font-weight: bold;
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
 }
 
 .touch-form label {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -254,6 +254,10 @@ textarea {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+.form-footer button:hover {
+  background-color: #f8f8f8;
+  transition: 0.3s;
 }
 
 @media all and (max-width: 900px) {

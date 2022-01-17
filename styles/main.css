@@ -1,8 +1,9 @@
 body {
   margin: 0px;
+  font-family: Tomica;
 }
 
-#mainlanding {
+#main-wrapper {
   background-image: url("../assets/main-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,6 +16,7 @@ body {
   background-repeat: repeat-y;
   background-size: cover; 
 }*/
+
 nav.topnav {
   display: flex;
   flex-direction: row;
@@ -42,7 +44,7 @@ nav.topnav {
 .footer-links a,
 .res-ul a {
   text-decoration: none;
-  font-family: Tomica;
+  font-family: inherit;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -164,7 +166,7 @@ h5 {
   margin: 5px;
 }
 div.landing-text h4 {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -178,7 +180,7 @@ div.landing-text h4 {
 }
 
 div.landing-text h1 {
-  font-family: Tomica;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -224,6 +226,16 @@ div.landing-text h5 {
   margin-top: 10px;
 }
 
+#link-early-access:hover,
+#link-submit:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+}
+#social-media-connect:hover {
+  background-color: rgba(164, 153, 153, 0.15);
+  transition: 0.3s;
+}
+
 @media all and (max-width: 900px) {
   nav {
     width: fit-content;
@@ -266,7 +278,7 @@ div.landing-text h5 {
   .landing-text h5 {
     text-align: justify;
   }
-  #mainlanding {
+  #main-wrapper {
     object-fit: contain;
   }
 
